@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* =====GLOBAL SETTINGS===== */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(93, 93, 93);
+}
+/* =====END GLOBAL SETTINGS===== */
+
+
+
+/* =====CONTAINER===== */
+
+.container{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #E1E5F6;
+}
+
+/* =====END CONTAINER===== */
+
+
+
+/* =====NAV===== */
+
+.nav{
+    width: 11vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    -webkit-box-shadow: 5px -2px 13px -3px rgba(0,0,0,0.63); 
+    box-shadow: 5px -2px 13px -3px rgba(0,0,0,0.15);    
+}
+
+/* =====END NAV===== */
+
+
+
+/* =====LOGO AND CLOSE BUTTON===== */
+
+.top{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.top .logo a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.top .logo a span{
+    color:orange;
+    text-transform: uppercase;
+}
+
+.close{
+    padding-left: 80px;
+    cursor: pointer;
+}
+
+.close span{
+    font-size: 22px;
+}
+
+/* ===== END LOGO AND CLOSE BUTTON===== */
+
+
+
+/* =====NAVBAR ASIDE MENU===== */
+
+.navbar {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover{
+    background-color: rgb(207, 207, 207);
+    border-radius: 6px;
+}
+
+.iconSize{
+    font-size: 26px;
+}
+
+.list {
+    padding-left: 10px;
+}
+
+/* =====END NAVBAR ASIDE MENU===== */
+
+
+
+/* =====FOOTER TEXT OF NAVBAR===== */
+
+.footerNav{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* =====END FOOTER TEXT OF NAVBAR===== */
+
+main{
+    width: calc(100vw - 11vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: center; 
+    padding: 60px 30px;
+    padding-bottom: 0px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+    height: 210px;
+    margin-left: 40px;
+    background-color: #FFF;
+    border: 1px solid rgb(207, 207, 207);
+    -webkit-box-shadow: 0px 5px 8px -6px rgba(0,0,0,0.83); 
+    box-shadow: 0px 5px 8px -6px rgba(0,0,0,0.83);
+}
+
+.card:nth-child(1n) .midCard span:first-child{
+    color: #09ABF4;
+}
+
+.card:nth-child(2n) .midCard span:first-child{
+    color: #FF9800
+}
+
+.card:nth-child(3n) .midCard span:first-child{
+    color: #F44336
+}
+
+.card:nth-child(4n) .midCard span:first-child{
+    color: #9C27B0
+}
+
+.card:nth-child(5n) .midCard span:first-child{
+    color: #FF9800
+}
+
+.card:first-child{
+    margin-left: 0px;
+}
+
+.card .topCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.card .topCard span:first-child{
+    font-size: 14px;
+}
+
+.card .topCard span:last-child{
+    font-size: 18px;
+}
+
+.card .midCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-display: none;
+    width: 100%;
+    height: 100px;
+    line-height: 40px;
+}
+
+.midCard span:first-child{
+    font-size: 60px;
+}
+
+.midCard span:last-child{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.botCard{
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+.botCard span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.chart{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding: 65px 30px;
+    width: 1436px;
+    margin: 30px;
+    background-color: #FFF;
+    border: 1px solid rgb(207, 207, 207);
+    -webkit-box-shadow: 0px 5px 8px -6px rgba(0,0,0,0.83); 
+    box-shadow: 0px 5px 8px -6px rgba(0,0,0,0.83);
+}
+
+ 
+
